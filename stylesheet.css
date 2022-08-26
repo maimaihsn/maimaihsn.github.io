@@ -119,10 +119,11 @@ a {
   margin-top: 0;
   margin-bottom: 5px;
   display: inline-block;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Titillium', sans-serif;
   font-size: 32px;
   font-weight: 600;
-  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
 }
 
 
