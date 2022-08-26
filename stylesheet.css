@@ -335,6 +335,7 @@ display: inline-block;
   height:100%;
   margin-left: auto;
   margin-right: auto;
+  text-align: left;
 }
 
 .profile-img{
@@ -344,7 +345,7 @@ display: inline-block;
   margin: auto;
 }
 
-.profile h3{
+.comment-wrapper h3{
   margin-top: 0;
   margin-bottom: 5px;
   display: inline-block;
