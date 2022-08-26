@@ -345,15 +345,6 @@ display: inline-block;
   margin: auto;
 }
 
-.comment-wrapper h3{
-  margin-top: 0;
-  margin-bottom: 5px;
-  display: inline-block;
-  font-family: 'Nunito', sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-}
-
 .icon{
   width: 24px;
   height: 24px;
@@ -451,8 +442,6 @@ line-height: 220px;
   width:100%;
 }
 
-
-
 .text-contents {
   width: 80%;
   display: inline-block;
@@ -462,7 +451,12 @@ line-height: 220px;
 }
 
 .heading h3 {
-  font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .skills-wrapper {
