@@ -115,6 +115,15 @@ a {
   margin-right: auto;
 }
 
+.heading h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+
 .top-wrapper {
   height:100vh;
   padding: 8%;
@@ -448,15 +457,6 @@ line-height: 220px;
   margin-top: 15px;
   font-size: 13px;
   color: #b3aeb5;
-}
-
-.heading h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
-    display: inline-block;
-    font-family: 'Nunito', sans-serif;
-    font-size: 32px;
-    font-weight: 600;
 }
 
 .skills-wrapper {
