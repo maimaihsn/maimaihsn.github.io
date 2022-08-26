@@ -122,12 +122,9 @@ a {
   font-family: 'Nunito', sans-serif;
   font-size: 32px;
   font-weight: 600;
-}
-
-.heading span {
-  padding-bottom: 20px;
   border-bottom: 3px solid #000;
 }
+
 
 .top-wrapper {
   height:100vh;
