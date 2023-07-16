@@ -117,8 +117,8 @@ a {
 
 
 .top-wrapper {
-  height:500px;
-  padding: 5%;
+  height:10%;
+  padding: 3%;
   /* background-image: url(./top.png); */
   background-color: #fff;
   background-size: cover;
@@ -303,7 +303,7 @@ header {
 }
 
 .profile{
-  padding-top: 25px;
+  padding: 5% 1%;
   width:70%;
   height:100%;
   margin-left: auto;
@@ -312,12 +312,6 @@ header {
   float:center;
 }
 
-.profile-img{
-  width: 48%;
-  height: 100%;
-  float:left;
-  margin: auto;
-}
 
 .icon{
   width: 32px;
@@ -330,7 +324,25 @@ header {
   text-align: right;
 }
 
-.skills-wrapper h3{
+
+.career-wrapper {
+  padding: 5%;
+  margin: 0 10%;
+  background-color: #fff;
+  animation-name: fadein_contents;
+  animation-duration: 2s;
+  border: 1px solid #000000;
+  height:auto;
+	overflow:hidden;
+}
+
+.career-wrapper p{
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.career-wrapper h3{
   margin-top: 0;
   margin-bottom: 6px;
   font-family: 'Lobster', cursive;
@@ -341,10 +353,29 @@ header {
   text-align: right;
 }
 
+.career{
+  padding: 5% 1%;
+  width: 70%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  float: center;
+}
+
+.skills-wrapper h3{
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+  font-size: 36px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
 .skills-wrapper {
-  height: 450px;
   padding: 5%;
-  margin: 5% 10%;
+  margin: 5% 10% 10% 10%;
   background-color: #fff;
   text-align: center;
   font-weight: 350;
@@ -356,7 +387,7 @@ header {
 }
 
 .skills{
-  padding-top: 25px;
+  padding: 5% 1%;
   width:60%;
   height:100%;
   margin-left: auto;
@@ -417,7 +448,7 @@ footer h1 {
 footer p {
   color: #b3aeb5;
   font-size: 12px;
-  font-family: 'Krona One', sans-serif;
+    font-family: 'Krona One', sans-serif;
 }
 
 footer {
@@ -425,7 +456,7 @@ footer {
   height: 3%;
   padding-top: 2%;
   padding-bottom: 2%;
-  background-color: rgb(222, 237, 255);
+  background-color:#fef4f4;
 }
 
 .menu-icon {
