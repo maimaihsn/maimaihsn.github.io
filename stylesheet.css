@@ -408,7 +408,7 @@ to {
 footer h1 {
   padding-top: 20px;
   opacity: 0.9;
-  font-size: 14px;
+  font-size: 20x;
   letter-spacing: 0.5px;
   color:#000;
   font-family: 'Krona One', sans-serif;
@@ -417,6 +417,7 @@ footer h1 {
 footer p {
   color: #b3aeb5;
   font-size: 12px;
+  font-family: 'Krona One', sans-serif;
 }
 
 footer {
