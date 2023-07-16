@@ -117,26 +117,27 @@ a {
 
 
 .top-wrapper {
-  height:100vh;
-  padding: 8%;
+  height:500px;
+  padding: 5%;
   /* background-image: url(./top.png); */
   background-color: #fff;
   background-size: cover;
   width:auto;
   background-repeat: no-repeat;
-  text-align: right;
   animation-name: fadein;
   animation-duration: 2.6s;
   position: relative;
+  display: flex;
 }
 
-.top-wrapper h1 {
+.top-m {
   opacity: 0.85;
-  font-size: 85px;
-  padding-top: 100px;
+  font-size: 80px;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   letter-spacing: 3px;
-  color:#b7dbff;
-  text-align: center;
+  color: #b7dbff;
   font-family: 'Lobster', cursive;
 }
 
@@ -173,55 +174,13 @@ to {
 
 .star1{
   position:absolute;
-  left:12%;
-  top:60%;
+  left:50%;
+  top:30%;
   color:#b7dbff;
   opacity: 0.8;
-  font-size: 8.5em;
-}
-.star2{
-  position:absolute;
-  left:77%;
-  top:17%;
-  color:#b7dbff;
-  opacity: 0.8;
-  font-size: 6em;
-}
-.star3{
-  position:absolute;
-  left:23%;
-  top:10%;
-  color:#b7dbff;
-  font-size: 6em;
-  opacity: 0.8;
+  font-size: 20em;
 }
 
-.star4{
-  position:absolute;
-  left:5%;
-  top:25%;
-  color:#b7dbff;
-  font-size: 4.5em;
-  opacity: 0.8;
-}
-
-.star5{
-  position:absolute;
-  left:70%;
-  top:60%;
-  color:#b7dbff;
-  font-size: 10em;
-  opacity: 0.8;
-}
-
-.star6{
-  position:absolute;
-  left:89%;
-  top:36%;
-  color:#b7dbff;
-  font-size: 4em;
-  opacity: 0.8;
-}
 
 .star-fav:before {
     transform: rotate(71deg);
@@ -240,7 +199,7 @@ to {
     100%{ transform:rotate(360deg); }
 }
 .mawaru-hoshi {
-    animation:50s linear infinite twinklestar;
+    animation:70s linear infinite twinklestar;
 }
 
 .btn-wrapper {
@@ -425,8 +384,7 @@ to {
 }
 
 .heading {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 5%;
   color: #000;
 }
 
@@ -438,26 +396,7 @@ to {
   padding-bottom: 15px;
 }
 
-.
 
-.circle{
-  border-radius: 50%;
-  background-color: rgb(222, 237, 255);
-  height: 220px;
-  width: 220px;
-  display: inline-block;
-line-height: 220px;
-}
-
-
-.lesson-icon i{
-  font-size: 6.5em;
-  opacity: 0.85;
-  position: absolute;
-  top: 27%;
-  left: 0%;
-  width:100%;
-}
 
 .text-contents {
   width: 80%;
@@ -466,34 +405,6 @@ line-height: 220px;
   font-size: 13px;
   color: #b3aeb5;
 }
-
-/* inputとtextareaのCSSを指定してください */
-input, textarea{
-  width:400px;
-  margin-top:10px;
-  margin-bottom:30px;
-  padding:20px;
-  font-size:18px;
-  border:1px solid #000;
-  opacity: 0.8;
-}
-
-
-.contact-submit{
-  background-color:#fff;
-  color:#000;
-  border: 2px solid #000;
-  opacity: 0.85;
-  width: 230px;
-}
-
-.works-wrapper img{
-  margin-top:20px;
-  height: 300px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.26)
-  border-radius: 20px;
-}
-
 
 
 footer h1 {
@@ -555,75 +466,32 @@ footer {
 }
 
 
-
-@media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .lesson-wrapper {
-    height: 990px;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-@media all and (max-width: 900px) {
-
-  .top-wrapper {
-    min-height:100vh;
-    padding: 80px 50px 50px 0;
-    background-size: 90%;
-
-  }
-
-  .lesson-wrapper {
-    height: 15%;
-  }
-
-  .skills-wrapper {
-    height: 20%;
-  }
-
-  .works-wrapper{
-    height: 16%;
-  }
-
-  .message-wrapper{
-     height: 13%;
-  }
-}
-
 @media all and (max-width: 800px) {
 
   .top-wrapper {
-    min-height:100vh;
-    padding: 80px 50px 50px 0;
+    min-height:70%;
     background-size: 90%;
-
+    padding: 8%;
   }
 
   .top-wrapper h1 {
-    font-size: 32px;
+    font-size: 65px;
   }
 
   .heading h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .star1{
     left:15%;
     top:65%;
-    font-size: 5.2em;
+    font-size: 5em;
   }
 
   .star2{
     left:78%;
     top:18%;
-    font-size: 7em;
+    font-size: 5em;
   }
   .star4{
     left:7%;
@@ -634,16 +502,7 @@ footer {
   .star5{
     display: none;
   }
-
-
-
-  .lesson-wrapper {
-    height: 15%;
-  }
-
 }
-
-
 
 
 @media all and (max-width: 670px) {
@@ -656,31 +515,29 @@ footer {
   }
 
   .top-wrapper {
-    height:100vh;
-    padding: 85px 50px 50px 0;
-    background-size: 90%;
-
+    height:30%;
+    padding: 8%;
   }
 
   .star1{
     left:15%;
-    top:50%;
+    top:65%;
     font-size: 4.5em;
   }
   .star2{
     left:75%;
     top:18%;
-    font-size: 5.5em;
+    font-size: 4em;
   }
   .star3{
     left:74%;
-    top:35%;
+    top:60%;
     font-size: 4em;
   }
 
   .star4{
-    left:6%;
-    top:25%;
+    left:10%;
+    top:20%;
     font-size: 3.5em;
   }
 
@@ -688,15 +545,16 @@ footer {
     display: none;
   }
 
+  .star6{
+    display: none;
+  }
+
   .twitter {
     margin-top: 10px;
   }
 
-  .top-wrapper{
-    padding-right:10px;
-  }
   .top-wrapper h1 {
-    font-size: 26px;
+    font-size: 65px;
   }
 
   .top-wrapper p {
@@ -706,61 +564,5 @@ footer {
   .top-wrapper h2{
     font-size: 24px;
   }
-
-  .lesson {
-    width: 100%;
-  }
-
-  .lesson-wrapper {
-    height: 15%;
-  }
-
-  .message-wrapper .btn {
-    width: 100%;
-  }
-
-  .comment-wrapper{
-    height: 800px;
-  }
-
-.profile{
-  width: 100%;
-}
-
- .profile-img{
-   float: none;
-   width: 100%;
-   marign: auto;
-  text-align: center;
- }
- .profile-info{
-   float: none;
-   width: 100%;
-   padding-top:25px;
-  text-align: center;
- }
-
-.main-wrapper{
-height: 900px;
-}
- .works{
-   float: none;
-   width: 100%;
-   marign: auto;
-
- }
-
- .skills{
-   float: none;
-   width: 100%;
-   marign: auto;
- }
-
-  .go-to-top{
-    top: 90%;
-    left:85%;
-  }
-
-
 
 }
