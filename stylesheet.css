@@ -318,13 +318,14 @@ header {
 }
 
 .profile-wrapper {
-  height: 650px;
   padding: 5%;
   margin: 0 10%;
   background-color: #fff;
   animation-name: fadein_contents;
   animation-duration: 2s;
   border: 1px solid #000000;
+  height:auto;
+	overflow:hidden
 }
 
 .profile-wrapper p{
@@ -351,6 +352,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  float:center;
 }
 
 .profile-img{
@@ -392,15 +394,18 @@ header {
   animation-name: fadein_contents;
   animation-duration: 2s;
   border: 1px solid #000000;
+  height:auto;
+	overflow:hidden
 }
 
 .skills{
   padding-top: 25px;
-  width:70%;
+  width:60%;
   height:100%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  float:center;
 }
 
 ul{
