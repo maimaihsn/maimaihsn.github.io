@@ -105,7 +105,7 @@ a {
 
 .top p{
   float:left;
-  font-size:28px;
+  font-size:24px;
 }
 
 .container {
@@ -115,22 +115,11 @@ a {
   margin-right: auto;
 }
 
-.heading h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
-  display: inline-block;
-  font-family: 'Titillium', sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #000;
-}
-
 
 .top-wrapper {
   height:100vh;
   padding: 8%;
-  background-image: url(./top.png);
+  /* background-image: url(./top.png); */
   background-color: #fff;
   background-size: cover;
   width:auto;
@@ -143,11 +132,12 @@ a {
 
 .top-wrapper h1 {
   opacity: 0.85;
-  font-size: 65px;
-  padding-top: 30px;
-  letter-spacing: 10px;
-  color:#000;
-  font-family: 'Krona One', sans-serif;
+  font-size: 85px;
+  padding-top: 100px;
+  letter-spacing: 3px;
+  color:#b7dbff;
+  text-align: center;
+  font-family: 'Lobster', cursive;
 }
 
 .top-wrapper h2 {
@@ -155,17 +145,17 @@ a {
   color:#000;
   font-weight: 600;
   font-family: 'Ubuntu', sans-serif;
-  font-size:40px;
+  font-size:30px;
   letter-spacing: 3px;
 }
 
 .top-wrapper p {
   opacity: 0.8;
-  font-size: 28px;
+  font-size: 24px;
   color:#000;
   font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 2px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
 }
 
 
@@ -185,23 +175,23 @@ to {
   position:absolute;
   left:12%;
   top:60%;
-  color:rgb(000, 227, 255);
+  color:#b7dbff;
   opacity: 0.8;
   font-size: 8.5em;
 }
 .star2{
   position:absolute;
-  left:78%;
-  top:18%;
-  color:rgb(000, 227, 255);
+  left:77%;
+  top:17%;
+  color:#b7dbff;
   opacity: 0.8;
-  font-size: 11em;
+  font-size: 6em;
 }
 .star3{
   position:absolute;
-  left:65%;
-  top:35%;
-  color:rgb(000, 227, 255);
+  left:23%;
+  top:10%;
+  color:#b7dbff;
   font-size: 6em;
   opacity: 0.8;
 }
@@ -210,7 +200,7 @@ to {
   position:absolute;
   left:5%;
   top:25%;
-  color:rgb(000, 227, 255);
+  color:#b7dbff;
   font-size: 4.5em;
   opacity: 0.8;
 }
@@ -219,8 +209,17 @@ to {
   position:absolute;
   left:70%;
   top:60%;
-  color:rgb(000, 227, 255);
-  font-size: 16.5em;
+  color:#b7dbff;
+  font-size: 10em;
+  opacity: 0.8;
+}
+
+.star6{
+  position:absolute;
+  left:89%;
+  top:36%;
+  color:#b7dbff;
+  font-size: 4em;
   opacity: 0.8;
 }
 
@@ -241,7 +240,7 @@ to {
     100%{ transform:rotate(360deg); }
 }
 .mawaru-hoshi {
-    animation:10s linear infinite twinklestar;
+    animation:50s linear infinite twinklestar;
 }
 
 .btn-wrapper {
@@ -318,32 +317,36 @@ header {
   background-color: rgba(255,255,255,0.3);
 }
 
-.comment-wrapper {
-  height: 600px;
+.profile-wrapper {
+  height: 650px;
   padding: 5%;
+  margin: 0 10%;
   background-color: #fff;
-  text-align: center;
   animation-name: fadein_contents;
   animation-duration: 2s;
+  border: 1px solid #000000;
 }
 
-.comment-wrapper h2{
-  padding: 20px;
-  border-bottom: 1px solid #000;
-display: inline-block;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 28px;
-}
-
-.comment-wrapper p{
-  font-size: 17px;
+.profile-wrapper p{
+  font-size: 16px;
   line-height: 24px;
   font-family: 'Sawarabi Gothic', sans-serif;
 }
 
+.profile-wrapper h3{
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+  font-size: 36px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
 .profile{
   padding-top: 25px;
-  width:60%;
+  width:70%;
   height:100%;
   margin-left: auto;
   margin-right: auto;
@@ -358,55 +361,52 @@ display: inline-block;
 }
 
 .icon{
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   margin-right:6px;
-  vertical-align: top;
+  /* vertical-align: top; */
 }
 
-.maimai{
-  width: 190px;
-  height: 190px;
+.profile a{
+  text-align: right;
 }
 
-.main-wrapper {
-  height: 670px;
+.skills-wrapper h3{
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+  font-size: 36px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  text-align: right;
+}
+
+.skills-wrapper {
+  height: 450px;
   padding: 5%;
+  margin: 5% 10%;
   background-color: #fff;
   text-align: center;
   font-weight: 350;
   animation-name: fadein_contents;
   animation-duration: 2s;
-}
-
-.works {
-  height: 95%;
-  width: 100%;
-  padding-bottom: 9%;
-  padding-left: 8%;
-  padding-right: 8%;
-  background-color: #f7f7f7;
-  text-align: center;
-  font-weight: 350;
-  animation-name: fadein_contents;
-  animation-duration: 2s;
-  width: 50%;
-  float: left;
+  border: 1px solid #000000;
 }
 
 .skills{
-    width: 47%;
-    height: 100%;
-    padding-bottom: 9%;
-    padding-left: 8%;
-    padding-right: 8%;
-    text-align: center;
-    font-weight: 350;
-    animation-name: fadein_contents;
-    animation-duration: 2s;
-      float: left;
-    background-color: #ffffff;
+  padding-top: 25px;
+  width:70%;
+  height:100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
+
+ul{
+  list-style-type:none;margin:0;padding:0;
+}/*リセット*/
+
 
 @keyframes fadein_contents {
 from {
@@ -460,51 +460,6 @@ line-height: 220px;
   margin-top: 15px;
   font-size: 13px;
   color: #b3aeb5;
-}
-
-.skills-wrapper {
-  height: 1000px;
-  padding-bottom: 80px;
-  font-weight: 350;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #fff;
-  text-align: center;
-}
-
-.works-wrapper {
-  height: 20%;
-  padding-bottom: 80px;
-  font-weight: 350;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: rgb(222, 237, 255);
-  text-align: center;
-}
-
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-top: 100px;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0px 7px #1a7940;
-}
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-
-.contact-form {
-  padding-top: 60px;
 }
 
 /* inputとtextareaのCSSを指定してください */
