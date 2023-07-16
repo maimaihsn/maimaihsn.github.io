@@ -131,11 +131,9 @@ a {
 }
 
 .top-m {
+  margin: 0 auto; 
   opacity: 0.85;
   font-size: 80px;
-  margin: auto;
-  margin-left: auto;
-  margin-right: auto;
   letter-spacing: 3px;
   color: #b7dbff;
   font-family: 'Lobster', cursive;
@@ -410,8 +408,8 @@ to {
 footer h1 {
   padding-top: 20px;
   opacity: 0.9;
-  font-size: 28px;
-  letter-spacing: 2.5px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
   color:#000;
   font-family: 'Krona One', sans-serif;
 }
@@ -423,9 +421,9 @@ footer p {
 
 footer {
   text-align: center;
-  height: 10%;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  height: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
   background-color: rgb(222, 237, 255);
 }
 
