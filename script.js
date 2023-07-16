@@ -3,6 +3,13 @@
 $(function(){
 	var loader = $('.loader-wrap');
 
+   //MENU
+   $(".menu-trigger").click(function () {
+    $(this).toggleClass("active");
+    $("nav").fadeToggle();
+    $("i").toggleClass("isActive fa-xmark fa-bars");
+    });
+
 	//ページの読み込みが完了したらアニメーションを非表示
 	$(window).on('load',function(){
 		loader.fadeOut();
