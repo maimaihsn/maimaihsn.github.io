@@ -413,7 +413,7 @@ to {
 }
 
 .heading {
-  padding: 5%;
+  padding: 2%;
   color: #000;
 }
 
@@ -471,18 +471,7 @@ footer {
   clear: left;
 }
 
-.go-to-top{
-  position:fixed;
-  top: 87%;
-  left:92%;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  border-radius: 50%;
-  border: 2px solid;
-  text-align: center;
-  opacity: 0.9;
-}
+
 
 .scroll{
   position: fixed;
@@ -497,6 +486,42 @@ footer {
 
 
 @media all and (max-width: 800px) {
+
+  .profile-wrapper {
+    padding: 5%;
+    margin: 5% 5%;
+  }
+  
+  .profile{
+    padding: 5% 1%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .career-wrapper {
+    padding: 5%;
+    margin: 5% 5%;
+  }
+  
+  .career{
+    padding: 5% 1%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skills-wrapper {
+    padding: 5%;
+    margin: 5% 5%;
+    margin-bottom:15%;
+  }
+  
+  .skills{
+    padding: 5% 1%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .top-wrapper {
     min-height:70%;
