@@ -534,6 +534,9 @@ to {
   color: #b3aeb5;
 }
 
+.footer-wrapper{
+  width: 100%;
+}
 
 footer h1 {
   padding-top: 20px;
@@ -546,8 +549,9 @@ footer h1 {
 
 footer p {
   color: #b3aeb5;
-  font-size: 12px;
-    font-family: 'Krona One', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-family: 'Recursive', sans-serif;
 }
 
 footer {
