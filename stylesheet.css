@@ -234,7 +234,8 @@ a {
   opacity: 0.85;
   font-size: 80px;
   letter-spacing: 3px;
-  color: #b7dbff;
+  /* color: #b7dbff; */
+  color: #f6bfbc;
   font-family: 'Lobster', cursive;
 }
 
@@ -270,14 +271,6 @@ to {
 
 
 
-
-
-.star-fav:before {
-    transform: rotate(71deg);
-}
-.star-fav:after {
-    transform: rotate(-71deg);
-}
 @keyframes anim-star-fav-rotate {
     from { transform: rotate(35deg);}
     to { transform: rotate(395deg);}
@@ -402,9 +395,10 @@ header {
 
 
 .icon{
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   margin-right:6px;
+  text-align: right;
   /* vertical-align: top; */
 }
 
@@ -548,9 +542,8 @@ footer h1 {
 }
 
 footer p {
-  color: #b3aeb5;
+  color: #f6bfbc;
   font-size: 14px;
-  letter-spacing: 0.5px;
   font-family: 'Recursive', sans-serif;
 }
 
@@ -559,7 +552,8 @@ footer {
   height: 3%;
   padding-top: 2%;
   padding-bottom: 2%;
-  background-color:#fef4f4;
+  /* background-color:#fef4f4; */
+  background-color:#eaedf7;
 }
 
 .menu-icon {
