@@ -2,6 +2,47 @@
   box-sizing: border-box;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* buttonタグのリセットCSS（不要な場合、セレクタごと削除してください） */
+button {
+  padding: 0;
+  font-family: inherit;
+  appearance: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.buttonOutline {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 320px;
+  height: 64px;
+  padding: 12px 44px;
+  font-family: 'Lobster',cursive;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background-color: transparent;
+  border: 2px solid #000;
+
+}
+
+.buttonOutline:hover {
+  opacity: 0.9;
+  border-color: rgb(222, 237, 255);
+}
+
+
+
 /*menu*/
 .menu-trigger {
   position: fixed;
@@ -219,23 +260,16 @@ a {
 @keyframes fadein {
 from {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateY(15px);
 }
 to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
 }
 }
 
 
-.star1{
-  position:absolute;
-  left:50%;
-  top:30%;
-  color:#b7dbff;
-  opacity: 0.8;
-  font-size: 20em;
-}
+
 
 
 .star-fav:before {
@@ -250,10 +284,6 @@ to {
 }
 
 
-@keyframes twinklestar {
-  0%{ transform:rotate(0);}
-    100%{ transform:rotate(360deg); }
-}
 .mawaru-hoshi {
     animation:70s linear infinite twinklestar;
 }
@@ -351,10 +381,10 @@ header {
 
 .profile-wrapper h3{
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-family: 'Lobster', cursive;
   letter-spacing: 2px;
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 600;
   padding-bottom: 5px;
   text-align: left;
@@ -402,10 +432,10 @@ header {
 
 .career-wrapper h3{
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-family: 'Lobster', cursive;
   letter-spacing: 2px;
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 600;
   padding-bottom: 5px;
   text-align: right;
@@ -422,10 +452,10 @@ header {
 
 .skills-wrapper h3{
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-family: 'Lobster', cursive;
   letter-spacing: 2px;
-  font-size: 36px;
+  font-size: 38px;
   font-weight: 600;
   padding-bottom: 5px;
   text-align: left;
@@ -435,7 +465,6 @@ header {
   padding: 5%;
   margin: 5% 10% 10% 10%;
   background-color: #fff;
-  text-align: center;
   font-weight: 350;
   animation-name: fadein_contents;
   animation-duration: 2s;
@@ -446,12 +475,24 @@ header {
 
 .skills{
   padding: 5% 1%;
-  width:60%;
+  width:70%;
   height:100%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
   float:center;
+}
+
+.contact-wrapper {
+  padding: 5%;
+  padding-bottom: 10%;
+  margin-bottom: 8%;
+  background-color: #fff;
+  text-align: center;
+  animation-name: fadein_contents;
+  animation-duration: 2s;
+  height:auto;
+	overflow:hidden
 }
 
 ul{
@@ -462,7 +503,7 @@ ul{
 @keyframes fadein_contents {
 from {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(15px);
 }
 to {
     opacity: 1;
@@ -547,22 +588,22 @@ footer {
 
   .profile-wrapper {
     padding: 5%;
-    margin: 10% 5%;
+    margin: 0% 3% 10% 3%;
   }
   
   .profile{
-    padding: 5% 1%;
+    padding: 12% 1%;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
   }
   .career-wrapper {
     padding: 5%;
-    margin: 10% 5%;
+    margin: 10% 3%;
   }
   
   .career{
-    padding: 5% 1%;
+    padding: 12% 1%;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -570,15 +611,18 @@ footer {
 
   .skills-wrapper {
     padding: 5%;
-    margin: 10% 5%;
-    margin-bottom: 30%;
+    margin: 10% 3%;
+    margin-bottom: 22%;
   }
   
   .skills{
-    padding: 5% 1%;
+    padding: 12% 1%;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .contact-wrapper{
+    margin-bottom: 22%;
   }
 
   .top-wrapper {
@@ -593,27 +637,6 @@ footer {
 
   .heading h2 {
     font-size: 30px;
-  }
-
-  .star1{
-    left:15%;
-    top:65%;
-    font-size: 5em;
-  }
-
-  .star2{
-    left:78%;
-    top:18%;
-    font-size: 5em;
-  }
-  .star4{
-    left:7%;
-    top:25%;
-    font-size: 3.5em;
-  }
-
-  .star5{
-    display: none;
   }
 }
 
@@ -630,40 +653,6 @@ footer {
   .top-wrapper {
     height:30%;
     padding: 8%;
-  }
-
-  .star1{
-    left:15%;
-    top:65%;
-    font-size: 4.5em;
-  }
-  .star2{
-    left:75%;
-    top:18%;
-    font-size: 4em;
-  }
-  .star3{
-    left:74%;
-    top:60%;
-    font-size: 4em;
-  }
-
-  .star4{
-    left:10%;
-    top:20%;
-    font-size: 3.5em;
-  }
-
-  .star5{
-    display: none;
-  }
-
-  .star6{
-    display: none;
-  }
-
-  .twitter {
-    margin-top: 10px;
   }
 
   .top-wrapper h1 {
