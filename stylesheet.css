@@ -276,48 +276,11 @@ to {
     to { transform: rotate(395deg);}
 }
 
-
-.mawaru-hoshi {
-    animation:70s linear infinite twinklestar;
-}
-
-.btn-wrapper {
-  text-align: center;
-}
-
-.btn-wrapper p {
-  margin-bottom: 20px;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 8px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
 .fa {
   margin-right: 5px;
 }
+
+
 
 header {
   height: 50px;
@@ -391,6 +354,10 @@ header {
   margin-right: auto;
   text-align: left;
   float:center;
+}
+
+.icon-wrapper{
+  text-align: right;
 }
 
 
