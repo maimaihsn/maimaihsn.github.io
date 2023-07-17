@@ -542,7 +542,7 @@ footer h1 {
 }
 
 footer p {
-  color: #f6bfbc;
+  color: #fff;
   font-size: 14px;
   font-family: 'Recursive', sans-serif;
 }
@@ -553,7 +553,7 @@ footer {
   padding-top: 2%;
   padding-bottom: 2%;
   /* background-color:#fef4f4; */
-  background-color:#eaedf7;
+  background-color:#f6bfbc;
 }
 
 .menu-icon {
