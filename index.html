@@ -1,95 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>m-hoshino</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m-hoshino</title>
 
-  <!-- ファビコン-->
-  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <!-- ファビコン-->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    
+    <!--FontAwesome読み込み-->
+    <script src="https://kit.fontawesome.com/43f18b0764.js" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <!--FontAwesome読み込み-->
-  <script src="https://kit.fontawesome.com/43f18b0764.js" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
-  <!-- CSS読み込み -->
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<body>
-  <div class="loader-wrap">
-    <div class="loader">Loading...</div>
-  </div>
+  </head>
+  <body>
+    <div class="loader-wrap">
+      <div class="loader">Loading...</div>
+    </div>
 
-<nav style="display:none;">
-  <ul>
-    <li>
-      <a href="/">HOME</a>
-    </li>
-    <li>
-      <a href="#Profile">Profile</a>
-    </li>
-    <li>
-      <a href="#Career">Career</a>
-    </li>
-    <li>
-      <a href="#Skills">Skills</a>
-    </li>
-    <li>
-      <a href="#Contact">Contact</a>
-    </li>
-  </ul>
-</nav>
+    <nav style="display:none;">
+      <ul>
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="#Profile">Profile</a>
+        </li>
+        <li>
+          <a href="#Career">Career</a>
+        </li>
+        <li>
+          <a href="#Skills">Skills</a>
+        </li>
+        <li>
+          <a href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-
-<header>
-  <span class="menu-trigger">
-    <i class="fa-solid fa-bars fa-2x"></i>
-  </span>
-</header>
+    <header>
+      <span class="menu-trigger">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </span>
+    </header>
 
     <div class="container">
       <div class="top-wrapper">
-      <!-- <i class="fas fa-star star1 mawaru-hoshi"></i> -->
         <div class="top-m">
           <h1>m-hoshino</h1>
         </div>
       </div>
     </div>
 
-
-
     <div class="container">
       <div class="heading">
         <div class="profile-wrapper">
           <div class="profile">
             <h3 id="Profile">Profile</h3>
-                <p>東京工業大学工学院電気電子系修士課程2年の星野麻衣子(Hoshino Maiko)です。大学院では半導体デバイスを専攻しており、共鳴トンネル構造を用いたデバイスに関する研究を行っています。</p>
-                <p>ITに興味があり、趣味でDiscord Botの開発や、クラウドや機械学習に関する勉強をしています。</p>
-                <p>2024年4月以降、エンジニアとして企業に入社予定です。</p>
-                <br>
+              <p>東京工業大学工学院電気電子系修士課程2年の星野麻衣子(Hoshino Maiko)です。大学院では半導体デバイスを専攻しており、共鳴トンネル構造を用いたデバイスに関する研究を行っています。</p>
+              <p>ITに興味があり、趣味でDiscord Botの開発や、クラウドや機械学習に関する勉強をしています。</p>
+              <p>2024年4月以降、エンジニアとして企業に入社予定です。</p>
+              <br>
 
-                <div class="icon-wrapper">
-                  <a href="https://github.com/maimaihsn"><img src="images/GitHub-Mark-64px.png"  class="icon"></a>
-                  <a href="https://note.com/mumeneri"><img src="images/note.png" class="icon"></a>
-
-                </div>
-              
-            </div>
+              <div class="icon-wrapper">
+                <a href="https://github.com/maimaihsn"><img src="images/GitHub-Mark-64px.png"  class="icon"></a>
+                <a href="https://note.com/mumeneri"><img src="images/note.png" class="icon"></a>
+              </div>
+                
+          </div>
         </div>
       </div>
     </div>
@@ -99,117 +95,115 @@
         <div class="career-wrapper">
           <div class="career">
             <h3 id="Career" style="  text-align: right;">Career</h3>
+                  
+            <p><u><b>Educatiion</b></u></p>
+            <ul>
+              <li>Tokyo Institute of Technology, Department of Electrical and Electronic Engineering, 2022 –</li>
+              <li>Tokyo University of Science, Department of Electrical Engineering, 2016 – 2022</li>
+            </ul>    
+            <br> 
+
+            <p><u><b>Experience</b></u></p>
+            <ul>
+              <li>
+                Part-time job
+                <ol>
+                  Teacher@Cram school
+                  Aug 2017 - Mar 2022
+                </ol>
+              </li>
+
+              <li>
+                Part-time job
+                <ol>
+                  Engineer@IT company
+                  Oct 2021 - Mar 2022
+                </ol>
+              </li>
+
+              <li>
+                Internship
+                <ol>
+                  Engineer@IT company
+                  Aug 2022 - Sep 2022
+                </ol>
+              </li>
+
+              <li>
+                Internship
+                <ol>
+                  Engineer@IT company
+                  Oct 2022 - Oct 2022
+                </ol>
+              </li>
+
+              <li>
+                Part-time job
+                <ol>
+                  General affairs@Newspaper company
+                  Apr 2022 - Present
+                </ol>
+              </li>
+            </ul>
+
+            <br>
+
+            <p><u><b>Conference Presentation</b></u></p>
+            <ul>
+              <li>
+                Si/CaF<sub>2</sub> 四重障壁共鳴トンネル構造を用いた抵抗変化メモリ素子の室温スイッチング特性, 第70回応用物理学会春季学術講演会, Mar. 2023.
+              </li>
+              <li>
+                Si/CaF<sub>2</sub> 四重障壁共鳴トンネル構造を用いた抵抗変化メモリ素子の室温パルス応答特性, 第84回応用物理学会秋季学術講演会, Sep. 2023.
+              </li>
+            </ul>
                 
-              <p><u><b>Educatiion</b></u></p>
-                <ul>
-                  <li>Tokyo Institute of Technology, Department of Electrical and Electronic Engineering, 2022 –</li>
-                  <li>Tokyo University of Science, Department of Electrical Engineering, 2016 – 2022</li>
-                </ul> 
-
-              <br> 
-
-                <p><u><b>Experience</b></u></p>
-                  <ul>
-                    <li>
-                      Part-time job
-                      <ol>Teacher@Cram school
-                        Aug 2017 - Mar 2022</ol>
-                    </li>
-
-                    <li>
-                      Part-time job
-                      <ol>Engineer@IT company
-                        Oct 2021 - Mar 2022</ol>
-                    </li>
-
-                    <li>
-                      Internship
-                      <ol>
-                        Engineer@IT company
-                        Aug 2022 - Sep 2022
-                      </ol>
-                    </li>
-
-                    <li>
-                      <li>
-                        Internship
-                        <ol>
-                          Engineer@IT company
-                          Oct 2022 - Oct 2022
-                        </ol>
-                      </li>
-                    </li>
-
-                    <li>
-                      Part-time job
-                      <ol>
-                        General affairs@Newspaper company
-                        Apr 2022 - Present
-                      </ol>
-                    </li>
-
-                  </ul>
-
-                  <br>
-
-                <p><u><b>Conference Presentation</b></u></p>
-                  <ul>
-                    <li>
-                      Si/CaF<sub>2</sub> 四重障壁共鳴トンネル構造を用いた抵抗変化メモリ素子の室温スイッチング特性, 第70回応用物理学会春季学術講演会, Mar. 2023.
-                    </li>
-                    <li>
-                      Si/CaF<sub>2</sub> 四重障壁共鳴トンネル構造を用いた抵抗変化メモリ素子の室温パルス応答特性, 第84回応用物理学会秋季学術講演会, Sep. 2023.
-                    </li>
-                  </ul>
-                
-            </div>
+          </div>
         </div>
       </div>
     </div>
 
-
-
-  <div class="container">
+    <div class="container">
       <div class="heading">
         <div class="skills-wrapper">
           <div class="skills">
             <h3 id="Skills">Skills</h3>
             <ul>
-            <li>HTML, CSS(SCSS), jQuery</li>
-            <li>illustrator</li>
-            <li>C, C++, PHP, Python, Node.js, JavaScript</li>
-            <li>WordPress</li>
-            <li>Amazon Web Services</li>
+              <li>HTML, CSS(SCSS), jQuery</li>
+              <li>illustrator</li>
+              <li>C, C++, PHP, Python, Node.js, JavaScript</li>
+              <li>WordPress</li>
+              <li>Amazon Web Services</li>
 
-            <br>
+              <br>
 
-            <p><u><b>Qualifications</b></u></p>
-            <li>TOEIC 860(2020/10)</li>
-            <li>基本情報技術者試験(2021/2)</li>
+              <p><u><b>Qualifications</b></u></p>
+              <li>TOEIC 860(2020/10)</li>
+              <li>基本情報技術者試験(2021/2)</li>
             </ul>
           </div>
+        </div>
       </div>
     </div>
-  </div>
 
+    <div class="container">
+      <div class="heading">
+        <div id="Contact" class="contact-wrapper">
 
-  <div class="container">
-    <div class="heading">
-      <div id="Contact" class="contact-wrapper">
           <a class="buttonOutline" href="mailto:mhoshino2024@gmail.com">Contact</a>
+
+        </div>
       </div>
     </div>
-  </div>
 
-      <div class="footer-wrapper">
-        <footer>
-          <p>copyright©2020 Maiko Hoshino</p>
-        </footer>
-      </div>
+    <div class="footer-wrapper">
+      <footer>
+        <p>copyright©2020 Maiko Hoshino</p>
+      </footer>
+    </div>
 
+  <!-- jsファイル -->
+    <script ype="text/javascript" src="script.js"></script>
 
-
-<!-- jsファイル -->
-<script ype="text/javascript" src="script.js"></script>
-</body>
+  </body>
 </html>

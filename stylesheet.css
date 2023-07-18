@@ -7,7 +7,7 @@ a {
   text-decoration: none;
 }
 
-/* buttonタグのリセットCSS（不要な場合、セレクタごと削除してください） */
+/* buttonタグのリセット*/
 button {
   padding: 0;
   font-family: inherit;
@@ -273,18 +273,9 @@ to {
 }
 }
 
-
-
-@keyframes anim-star-fav-rotate {
-    from { transform: rotate(35deg);}
-    to { transform: rotate(395deg);}
-}
-
 .fa {
   margin-right: 5px;
 }
-
-
 
 header {
   height: 50px;
@@ -293,33 +284,6 @@ header {
   position :fixed;
   top: 0;
   z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255,255,255,0.3);
 }
 
 .profile-wrapper {
@@ -376,7 +340,6 @@ header {
 .profile a{
   text-align: right;
 }
-
 
 .career-wrapper {
   padding: 5%;
@@ -489,8 +452,6 @@ to {
   padding-bottom: 15px;
 }
 
-
-
 .text-contents {
   width: 80%;
   display: inline-block;
@@ -538,20 +499,6 @@ footer {
 .clear {
   clear: left;
 }
-
-
-
-.scroll{
-  position: fixed;
-  top: 80%;
-  left: 4%;
-  text-align: center;
-}
-.scroll p{
-  writing-mode: vertical-rl;
-  color: #000;
-}
-
 
 @media all and (max-width: 800px) {
 
