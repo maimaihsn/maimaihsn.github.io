@@ -16,8 +16,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # ここに自分のアプリ（例：'myapp'）も追記
-    'main',
 ]
 
 MIDDLEWARE = [
