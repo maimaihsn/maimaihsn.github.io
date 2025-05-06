@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ポートフォリオ</title>
+    <style>
+    </style>
+
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style-gallery.css' %}">
+</head>
+<body>
+    <h1 style="text-align:center;">まいまいのポートフォリオ</h1>
+    <div class="grid">
+        {% for illustration in illustrations %}
+        <div class="card">
+            <img src="{{ illustration.image.url }}" alt="{{ illustration.title }}">
+            <h3>{{ illustration.title }}</h3>
+            <p>{{ illustration.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
