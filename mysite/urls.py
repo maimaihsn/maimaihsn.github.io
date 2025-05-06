@@ -7,6 +7,7 @@ from mysite import views  # ← 必須！
 urlpatterns = [
     path('admin/', admin.site.urls), 
     path('', views.home),
+    path('gallery/', views.gallery, name='gallery'),  # ← これが必要！
 ]
 
 # メディアファイルのURLルーティング
