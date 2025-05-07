@@ -45,6 +45,35 @@ a {
   text-decoration: none;
 }
 
+.login-icon {
+  position: fixed;
+  top: 18px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #333;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* 完全な円に */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.login-icon:hover {
+  background-color: #f6bfbc;
+  border-color: #f6bfbc;
+  color: white;
+  transform: scale(1.05);
+}
+
+
+
+
 .gallery-wrapper {
   padding: 5%;
   padding-bottom: 10%;
