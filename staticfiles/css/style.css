@@ -56,56 +56,51 @@ a {
 	overflow:hidden
 }
 
-/* buttonタグのリセット*/
-button {
-  padding: 0;
-  font-family: inherit;
-  appearance: none;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-}
 
-.button-wrapper {
+.button-center {
   text-align: center;
-  margin-top: 32px;
-  height:10%;
-  padding: 3%;
-  /* background-image: url(./top.png); */
-  /* background-color: #fff; */
-  background-size: cover;
-  width:auto;
-  background-repeat: no-repeat;
-  animation-name: fadein;
-  animation-duration: 2.6s;
-  position: relative;
-  display: flex;
+  margin-top: 30px;
 }
 
-.buttonOutline {
-  align-items: center;
+
+.buttonModern {
   display: inline-block;
-  /* justify-content: center; */
-  max-width: 320px;
-  height: 64px;
-  padding: 12px 44px;
-  font-family: 'Lobster',cursive;
-  font-size: 28px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  color: #000;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #f6bfbc, #f6d4bf);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   text-align: center;
-  overflow-wrap: anywhere;
-  /* background-color: transparent; */
-  background-color: white;
-  border: 2px solid #000;
-
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
+.buttonModern::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: transform 0.5s;
+  border-radius: 50%;
+  z-index: 0;
+}
 
-.buttonOutline:hover {
-  opacity: 0.9;
-  border-color: rgb(222, 237, 255);
+.buttonModern:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.buttonModern:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 
