@@ -16,7 +16,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mysite',
+    'users',  # ← 追加
 ]
+
+AUTH_USER_MODEL = 'users.CustomUser'  # ← 修正
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -75,3 +79,5 @@ MEDIA_ROOT = BASE_DIR / 'media'
 ALLOWED_HOSTS = ['.onrender.com']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+ALLOWED_HOSTS = ['.onrender.com', '127.0.0.1', 'localhost']

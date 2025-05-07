@@ -37,6 +37,10 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/style-gallery.css' %}">
 
   </head>
+  <a href="{% url 'admin:login' %}" class="login-icon" title="ログイン">
+    <i class="fas fa-sign-in-alt"></i>
+  </a>
+
   <body>
     <div class="loader-wrap">
       <div class="loader">Loading...</div>
@@ -212,22 +216,24 @@
 
     <div class="container">
       <div class="heading">
-        {% include 'components/illustration_grid.html' %}
-      </div>
-    </div>
-
-    <p>{{ illustration.image.url }}</p>
-
-
-    <div class="container">
-      <div class="heading">
-        <div id="Contact" class="contact-wrapper">
-
-          <a class="buttonOutline" href="mailto:mhoshino2024@gmail.com">Contact</a>
-
+        <div id="gallery" class="gallery-wrapper">
+          <h2 class="section-title">Gallery</h2>
+          <p class="section-subtitle">My original illustrations</p>
+          
+          {% include 'components/illustration_grid.html' %}
+          
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="heading">
+        <div class="button-wrapper">
+          <a href="{% url 'gallery' %}" class="buttonOutline">More</a>
+        </div>
+    </div>
+  </div>
+
 
     <div class="footer-wrapper">
       <footer>

@@ -1,11 +1,9 @@
-# posts/models.py
+# mysite/models.py
 
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from users.models import CustomUser
 
-class CustomUser(AbstractUser):
-    interests = models.ManyToManyField('Interest', blank=True)
-    following = models.ManyToManyField('self', symmetrical=False, related_name='followers')
 
 class Interest(models.Model):
     name = models.CharField(max_length=100, blank=True)
@@ -21,7 +19,7 @@ class Tag(models.Model):
 
 class Post(models.Model):
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='media/')
     caption = models.TextField()
     tags = models.ManyToManyField(Tag)
     created_at = models.DateTimeField(auto_now_add=True)
