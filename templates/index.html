@@ -61,11 +61,8 @@
           <a href="#Skills">Skills</a>
         </li>
         <li>
-            <a href="{% url 'gallery' %}">Gallery</a>
+            <a href="#Gallery">Gallery</a>
           </li>
-        <li>
-          <a href="#Contact">Contact</a>
-        </li>
       </ul>
     </nav>
 
@@ -103,6 +100,22 @@
       </div>
     </div>
 
+
+    <div class="container">
+      <div class="heading">
+        <div id="gallery" class="gallery-wrapper">
+          <h2 class="section-title">Gallery</h2>
+          <p class="section-subtitle">My original illustrations</p>
+          
+          {% include 'components/illustration_grid.html' %}
+          
+          <div class="button-center">
+            <a href="{% url 'gallery' %}" class="buttonModern">view all illustrations</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <div class="heading">
         <div class="career-wrapper">
@@ -115,6 +128,9 @@
               <li>Tokyo University of Science, Department of Electrical Engineering, 2016 – 2022</li>
             </ul>    
             <br> 
+
+
+  
 
             <p><u><b>Experience</b></u></p>
             <ul>
@@ -213,24 +229,6 @@
         </div>
       </div>
     </div>
-
-    <div class="container">
-      <div class="heading">
-        <div id="gallery" class="gallery-wrapper">
-          <h2 class="section-title">Gallery</h2>
-          <p class="section-subtitle">My original illustrations</p>
-          
-          {% include 'components/illustration_grid.html' %}
-          
-          <div class="button-center">
-            <a href="{% url 'gallery' %}" class="buttonModern">view all illustrations</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    
 
     <div class="footer-wrapper">
       <footer>
