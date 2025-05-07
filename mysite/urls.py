@@ -13,3 +13,6 @@ urlpatterns = [
 # メディアファイルのURLルーティング
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+    # 本番環境でも static が配信されるように
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
